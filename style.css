@@ -95,13 +95,25 @@ main {
     transition: background-color ease-in-out .2s, color ease-in-out .2s;
 }
 
-@media (hover: hover){
-    /*.ratings > *:hover {
+@media (hover: none){
+    .selected-rating {
+        background-color: var(--Orange);
+        color: var(--White);
+    }
+}
+
+@media (hover: hover) {
+    .selected-rating {
+        background-color: var(--Orange);
+        color: var(--White);
+    }
+
+    .ratings > *:hover {
         cursor: pointer;
         background-color: var(--Medium-Grey);
         color: var(--White);
         transition: background-color ease-in-out .2s, color ease-in-out .2s;
-    }*/
+    }
 
     button:hover {
         cursor: pointer;
@@ -116,10 +128,6 @@ main {
     padding-right: 1.1rem;
 }
 
-.selected-rating {
-    background-color: var(--Orange);
-    color: var(--White);
-}
 
 button {
     color: var(--White);
