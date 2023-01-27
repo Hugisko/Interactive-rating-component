@@ -17,6 +17,6 @@ ratings.forEach((rating) => {
             selected.classList.remove('selected-rating');
         }   
         rating.classList.add('selected-rating');
-        rate.innerHTML = rating.innerHTML;
+        rate.textContent = rating.textContent;
     });
 });
